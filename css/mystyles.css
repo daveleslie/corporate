@@ -1,6 +1,21 @@
+body {
+    color: #5e5e5e;
+}
+
 .services-logo {
+    color: #5e5e5e;
+}
+
+.services-logo:hover {
     /*font-size: 50px;*/
     color: #8DC63F;
+}
+
+.services-logo p {
+    margin-bottom: 20px;
+}
+.services-logo:hover p {
+    color: #5e5e5e;
 }
 
 .jumbotron {
@@ -16,6 +31,16 @@
 
 .btn-contact {
     background-color: #8DC63F;
+    color: #ffffff;
+    font-weight: bold;
+    /*border-radius: 20px;*/
+}
+
+.btn-learn {
+    background-color: #8DC63F;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
 }
 
 .business-details {
@@ -39,10 +64,18 @@
     text-align: justify;
 }
 
+.about-icon {
+    padding-left: 20px;
+}
+
 .justify {
     text-align: justify;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     font-size: 12px;
+}
+
+#services-row {
+    height: 344px;
 }
 
 footer {
@@ -135,7 +168,7 @@ footer {
     box-shadow: inset 0px 1px 0px 0px #0099cc;
     background-color: #0099cc;
     display: inline-block;
-    border: 1px solid ##00aada;
+    border: 1px solid #00aada;
     cursor: pointer;
     width: auto;
     color: #FFFFFF;
@@ -147,7 +180,7 @@ footer {
 
 .form-style input[type="button"]:hover,
 .form-style input[type="submit"]:hover {
-    background:linear-gradient(to bottom, ##0099cc 5%, ##00aada 100%);
+    background:linear-gradient(to bottom, #0099cc 5%, #00aada 100%);
     background-color:#00aada;
 }
 
