@@ -4,6 +4,7 @@ body {
 
 .services-logo {
     color: #5e5e5e;
+    margin-bottom: 25px;
 }
 
 .services-logo:hover {
@@ -12,7 +13,7 @@ body {
 }
 
 .services-logo p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .services-logo:hover p {
     color: #5e5e5e;
@@ -46,12 +47,14 @@ body {
 .business-details {
     color: #fff;
     background-color: #768692;
+    padding-bottom: 10px;
 }
 
 .contact-details,
 .contact-details a{
     color: #fff;
     background-color: #00a9ce;
+    padding-bottom: 10px;
 }
 
 .navbar-brand {
@@ -75,7 +78,7 @@ body {
 }
 
 #services-row {
-    height: 344px;
+    min-height: 344px;
 }
 
 footer {
@@ -193,6 +196,7 @@ footer {
     box-sizing: border-box;
     display: block;
     border-bottom: 2px solid #00a9ce;
+    text-align: center;
+    /*max-width: 200px;*/
     /*font-weight: 500;*/
 }
-
