@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Ugu Engineering Solutions</title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,9 +11,11 @@
     <link href="css/mystyles.css" rel="stylesheet">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js"></script>
     <script src="scripts/scripts.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -43,6 +45,22 @@
 //            $("#loginModal").modal('show');
 //        });
 
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('.ani-left').addClass("hide_me").viewportChecker({
+            classToAdd: 'show_me animated fadeInLeftBig',
+            offset: 100
+        });
+        $('.ani-up').addClass("hide_me").viewportChecker({
+            classToAdd: 'show_me animated fadeInUpBig',
+            offset: 100
+        });
+        $('.ani-right').addClass("hide_me").viewportChecker({
+            classToAdd: 'show_me animated fadeInRightBig',
+            offset: 100
+        });
+    });
     </script>
 
 </head>
@@ -179,20 +197,20 @@
                 </div>
             </div>
             <div class="row row-content">
-                <div class="col-sm-4">
+                <div class="col-sm-4 ani-left">
                     <h4 class=""><i class="fa fa-building fa-2x about-icon"></i> Company</h4>
                     <p class="justify">Ugu Engineering Solutions was founded in 2003 as a specialised retail energy management consultancy
                         with the specific aim of addressing the need for technology driven energy efficiency solutions along
                         with instituting best behavioral practices within large energy consumer organisations</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 ani-up">
                     <h4 class=""><i class="fa fa-eye fa-2x about-icon"></i> Vision</h4>
                     <p class="justify">We are firm believers in the need for better energy efficiency awareness and implementation in business
                         and look to leverage the power of technology to align corporate environmental and social sustainability
                         with financial bottom lines.</p>
 
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 ani-right">
                             <h4 class=""><i class="fa fa-rocket fa-2x about-icon"></i> Mission</h4>
                             <p class="justify">Our mission is to optimise energy consumption patterns and energy management practices within large
                                 businesses throughout Africa and the developed world. We aim to drive this by developing and implementing
@@ -207,7 +225,7 @@
 
 
 
-    <div class="row" id="clients">
+    <div class="row ani-up" id="clients">
         <div class="row row-heading">
             <div class="col-sm-2 col-sm-push-5 text-center">
                 <h3 class="section-title">CLIENTS</h3>
@@ -246,20 +264,20 @@
     </div> <!-- ./clients -->
     <div class="row" id="contact">
         <div class="row row-content">
-            <div class="col-sm-5">
+            <div class="col-sm-5 ani-left">
               <div class="col-sm-12">
                   <h4>SEND US A MESSAGE</h4>
               </div>
-                    <form class="form-style" role="form">
+                    <form class="form-style" role="form" action="mail_handler.php" method="post">
                         <input type="text" class="" name="name" placeholder="Name"/>
                         <input type="text" class="" name="company" placeholder="Company"/>
                         <input type="text" class="" name="email" placeholder="Email"/>
                         <input type="text" class="" name="subject" placeholder="Subject"/>
                         <textarea class="" name="message" rows="1" placeholder="Message" onkeyup="adjust_textarea(this)"></textarea>
-                        <input type="button" class="" value="Send Message"/>
+                        <input type="submit" class="" name="submit" value="Send Message"/>
                     </form>
             </div>
-            <div class="col-sm-6 col-sm-push-1">
+            <div class="col-sm-6 col-sm-push-1 ani-right">
                 <div class="row">
                   <div class="col-sm-12">
                       <h4>CONTACT DETAILS</h4>
@@ -292,10 +310,8 @@
             </div>
         </div>
     </div> <!-- ./contact -->
+</div> <!-- ./container -->
 
-
-
-</div>
 <footer>
     <div class="container">
         <div class="row">

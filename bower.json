@@ -1,0 +1,23 @@
+{
+  "name": "Ugu corporate",
+  "authors": [
+    "David <dave.leslie.online@gmail.com>"
+  ],
+  "description": "Ugu Engineering Solutions corporate homepage",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "www.ugueng.co.za",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "jQuery-viewport-checker": "jquery-viewport-checker#^1.8.7"
+  }
+}
