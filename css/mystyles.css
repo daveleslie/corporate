@@ -39,6 +39,10 @@ body {
     color: #f8f8f8;
 }
 
+.jumbotron A {
+    color: #f8f8f8
+}
+
 .btn-contact {
     background-color: #8DC63F;
     color: #ffffff;
@@ -84,6 +88,10 @@ body {
 
 .about-icon {
     padding-left: 20px;
+}
+
+.highlight:hover i {
+    color: #8DC63F;
 }
 
 .justify {
