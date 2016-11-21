@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST['submit'])){
-    $to = "bigwaive@gmail.com";
+    $to = "admin@ugueng.co.za";
     $name = $_POST['name'];
     $company = $_POST['company'];
     $from = $_POST['email'];
