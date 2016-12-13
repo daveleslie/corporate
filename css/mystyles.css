@@ -279,14 +279,26 @@ footer {
 
 .feature {
     margin: 0 auto;
-    max-height: 200px;
+    height: 200px;
 }
 
 .feature-label {
-    background-color: #8DC63F;
-    color: #fff;
-    font-weight: bolder;
+    /*background-color: #8DC63F;*/
+    /*color: #fff;*/
+    color: #8DC63F;
+    /*font-weight: bolder;*/
     padding: 5px 10px 5px 10px;
     margin-bottom: 20px;
     /*border-radius: 10px;*/
+}
+
+.green {
+    color: #8DC63F;
+}
+
+.bg-blue {
+    background-color: #00aada;
+    color: #fff;
+    /*height: 200px;*/
+    opacity: 0.8;
 }
